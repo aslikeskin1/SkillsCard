@@ -1,0 +1,21 @@
+﻿@model SkillsCard.Models.Siniflar.YETENEKLER
+@{
+    ViewBag.Title = "YetenekGetir";
+    Layout = "~/Views/Shared/_LayoutNavbar.cshtml";
+}
+
+<form class="form-group" method="post">
+<div style="margin-bottom:20px">
+    <label>Yetenek Açıklama</label>
+    @Html.TextBoxFor(x => x.ACIKLAMA)
+</div>
+<div style="margin-bottom:20px">
+    <label>Yetenek Değeri</label>
+    @Html.TextBoxFor(x => x.DEGER)
+</div>
+<div>
+    <button class="btn btn-success">Güncelle</button>
+</div>
+</form>
+
+
